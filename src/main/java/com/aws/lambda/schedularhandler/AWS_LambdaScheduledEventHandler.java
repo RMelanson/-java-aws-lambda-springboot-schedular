@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 
 import com.amazonaws.services.lambda.runtime.events.ScheduledEvent;
 
-@Component("QOHExtractToEcom")
-public class QOHExtractToEcom implements Function<ScheduledEvent, String> {
+@Component("AWS_LambdaScheduledEventHandler")
+public class AWS_LambdaScheduledEventHandler implements Function<ScheduledEvent, String> {
 
 	@Override
 	public String apply(ScheduledEvent event) {
